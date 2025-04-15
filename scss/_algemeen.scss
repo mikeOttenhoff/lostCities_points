@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  &,
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Bahianita&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem is 10px = 10px/16px = 62.5
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.rood {
+  background-color: rgba(230, 62, 26, 0.98);
+}
+.geel {
+  background-color: rgba(250, 204, 59, 0.9);
+}
+.groen {
+  background-color: rgba(29, 159, 63, 0.95);
+}
+.blauw {
+  background-color: rgba(45, 129, 193, 0.95);
+  color: #fff;
+}
+.wit {
+  background-color: rgba(245, 243, 246, 0.9);
+}

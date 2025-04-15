@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Bahianita&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.rood {
+  background-color: rgba(230, 62, 26, 0.98);
+}
+
+.geel {
+  background-color: rgba(250, 204, 59, 0.9);
+}
+
+.groen {
+  background-color: rgba(29, 159, 63, 0.95);
+}
+
+.blauw {
+  background-color: rgba(45, 129, 193, 0.95);
+  color: #fff;
+}
+
+.wit {
+  background-color: rgba(245, 243, 246, 0.9);
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  background-image: url(../img/Tropical-Jungle-Background-Graphics-84339217-1.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.contentContainer {
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 100%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: stretch;
+  grid-template-columns: repeat(auto-fit, 200px);
+  gap: 1rem;
+}
+@media only screen and (min-width: 1350px) {
+  .contentContainer {
+    grid-template-columns: repeat(auto-fit, 320px);
+  }
+}
+
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.8);
+  grid-column: 1/-1;
+}
+@media only screen and (max-width: 1350px) {
+  .title .title {
+    gap: 0.1rem;
+  }
+}
+.title_main {
+  font-family: "Bahianita", serif;
+}
+@media only screen and (max-width: 1350px) {
+  .title_main {
+    font-size: 15rem;
+  }
+}
+@media only screen and (min-width: 1350px) {
+  .title_main {
+    font-size: 25rem;
+  }
+}
+.title_sub {
+  font-size: 3rem;
+}
+@media only screen and (max-width: 1350px) {
+  .title_sub {
+    font-size: 5rem;
+  }
+}
+@media only screen and (min-width: 1350px) {
+  .title_sub {
+    font-size: 8rem;
+  }
+}
+
+.elem {
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+  border-color: #000;
+  border-style: solid;
+  border-width: 1rem;
+  border-radius: 1em;
+  box-shadow: 6px 3px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.elem h2 {
+  background-color: #000;
+  color: #fff;
+  font-family: "Bahianita", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+@media only screen and (min-width: 1350px) {
+  .elem h2 {
+    font-size: 10rem;
+  }
+}
+.elem form {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 0.2em;
+  padding: 1rem 1rem 2rem 1rem;
+}
+@media only screen and (min-width: 1350px) {
+  .elem form {
+    font-size: 3rem;
+  }
+}
+.elem form legend {
+  margin: 0rem auto 0 auto;
+  font-size: 2.4rem;
+  grid-column: 1/-1;
+}
+@media only screen and (min-width: 1350px) {
+  .elem form legend {
+    font-size: 4rem;
+    font-weight: 900;
+  }
+}
+.elem form legend:nth-of-type(2) {
+  margin: 2rem auto 0 auto;
+}
+.elem form input {
+  height: auto;
+}
+.elem form label {
+  height: auto;
+}
+
+.btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  text-transform: capitalize;
+}
+@media only screen and (min-width: 1350px) {
+  .btn {
+    font-size: 4rem;
+    font-weight: 900;
+  }
+}
+
+.scoreFloat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  font-weight: 900;
+  animation: scoreAnimatie 1s ease-in;
+}
+@media only screen and (min-width: 1350px) {
+  .scoreFloat {
+    font-size: 8rem;
+    font-weight: 900;
+  }
+}
+@keyframes scoreAnimatie {
+  25% {
+    scale: 0%;
+  }
+  40% {
+    transform: rotate(20deg);
+    scale: 150%;
+  }
+  50% {
+    transform: rotate(-10deg);
+    scale: 90%;
+  }
+  60% {
+    transform: rotate(5deg);
+    scale: 130%;
+  }
+  70% {
+    transform: rotate(-5deg);
+    scale: 95%;
+  }
+  80% {
+    transform: rotate(2deg);
+    scale: 105%;
+  }
+  90% {
+    scale: 100%;
+  }
+}
+
+.refreshButton {
+  width: 10rem;
+  height: 10rem;
+  background-color: #303030;
+  cursor: pointer;
+  border-radius: 1rem;
+  position: fixed;
+  right: 3vw;
+  bottom: 10%;
+  margin: 1rem auto;
+  transition: all 200ms ease-out;
+}
+.refreshButton .refreshIcon {
+  content: url(../img/rotate-reverse-solid.svg);
+  transform: scale(0.5);
+  filter: invert(1);
+}
+.refreshButton:hover {
+  transform: scale(1.1);
+  background-color: #404040;
+}
+@media only screen and (min-width: 1350px) {
+  .refreshButton {
+    position: fixed;
+    right: 1vw;
+    bottom: 0%;
+  }
+}
+
+.home_btn_container {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 4rem;
+  text-align: center;
+  position: 0;
+  background-color: #96bf3d;
+  padding: 1rem;
+  cursor: pointer;
+}
+.home_btn_container a {
+  color: #ee3124;
+  text-decoration: none;
+}
