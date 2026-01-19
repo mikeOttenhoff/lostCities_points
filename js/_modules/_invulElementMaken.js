@@ -217,5 +217,5 @@ export const invulElementenMaken = function () {
   // home_btn_container.classList.add("home_btn_container");
 
   // home_btn_container.appendChild(home_btn);
-  body.appendChild(home_btn_container);
+  // body.appendChild(home_btn_container);
 };
