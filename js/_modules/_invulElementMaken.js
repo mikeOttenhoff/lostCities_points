@@ -1,3 +1,4 @@
+"use strict";
 import { subScoreBerekening } from "./_berekening.js";
 
 export const invulElementenMaken = function () {
