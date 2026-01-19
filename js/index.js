@@ -1,4 +1,4 @@
-import { invulElementenMaken } from "../js/_modules/_invulElementMaken.js";
+import { invulElementenMaken } from "./_invulElementMaken.js";
 
 // Maak de UI elementen
 invulElementenMaken();
