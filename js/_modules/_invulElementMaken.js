@@ -51,11 +51,11 @@ export const invulElementenMaken = function () {
       // Convert string IDs to numbers and sum them up
       const sumPunten = punten.reduce(
         (total, current) => total + parseInt(current, 10),
-        0
+        0,
       );
       const sumWedden = wedden.reduce(
         (total, current) => total + parseInt(current, 10),
-        0
+        0,
       );
 
       // TEST Logs
@@ -110,7 +110,7 @@ export const invulElementenMaken = function () {
         if (this.name === "Weddenschap" && this.checked) {
           // Deselect all other Weddenschap checkboxes in the same color group
           const checkboxes = document.querySelectorAll(
-            `div[data-color='${color}'] input[name='Weddenschap']`
+            `div[data-color='${color}'] input[name='Weddenschap']`,
           );
           checkboxes.forEach(checkbox => {
             if (checkbox !== this) {
@@ -208,14 +208,14 @@ export const invulElementenMaken = function () {
   // Create mikeottenhoff button
   // ====================================================
 
-  const home_btn = document.createElement("a");
-  const home_btn_container = document.createElement("div");
+  // const home_btn = document.createElement("a");
+  // const home_btn_container = document.createElement("div");
 
-  home_btn.preventDefault;
-  home_btn.innerHTML = "mikeottenhoff.nl";
-  home_btn.href = "../../index.html";
-  home_btn_container.classList.add("home_btn_container");
+  // home_btn.preventDefault;
+  // home_btn.innerHTML = "mikeottenhoff.nl";
+  // home_btn.href = "../../index.html";
+  // home_btn_container.classList.add("home_btn_container");
 
-  home_btn_container.appendChild(home_btn);
+  // home_btn_container.appendChild(home_btn);
   body.appendChild(home_btn_container);
 };
